@@ -1,0 +1,9 @@
+autopep8
+flake8
+Pillow
+pip-licenses
+pipdeptree
+rstcheck
+sphinx
+sphinxcontrib-plantuml
+sphinxcontrib-xlsxtable

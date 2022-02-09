@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: rs232com
+Version: 0.0.1
+Summary: RS232C communication module
+Home-page: UNKNOWN
+Author: Imagenics.co.,ltd
+License: MIT License
+Keywords: rs232c module
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+License-File: LICENSE
+
+# rs232com
+
+## Documentation
+
+## Installation
+
+

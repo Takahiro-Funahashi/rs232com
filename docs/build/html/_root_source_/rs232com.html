@@ -1,0 +1,334 @@
+
+
+<!doctype html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>rs232com package &#8212; rs232com ver 0.0 ドキュメント</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bizstyle.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/bizstyle.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Pythonモジュール索引"
+             >モジュール</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">rs232com ver 0.0 ドキュメント</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">rs232com package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="rs232com-package">
+<h1>rs232com package<a class="headerlink" href="#rs232com-package" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="このヘッドラインへのパーマリンク">¶</a></h2>
+</section>
+<section id="module-rs232com.__main__">
+<span id="rs232com-main-module"></span><h2>rs232com.__main__ module<a class="headerlink" href="#module-rs232com.__main__" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="rs232com.__main__.get_port">
+<span class="sig-prename descclassname"><span class="pre">rs232com.__main__.</span></span><span class="sig-name descname"><span class="pre">get_port</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rs232com.__main__.get_port" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>シリアルComポートの取得</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値</dt>
+<dd class="field-odd"><p>シリアルComポートの文字列</p>
+</dd>
+<dt class="field-even">戻り値の型</dt>
+<dd class="field-even"><p>[list]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="rs232com.__main__.rs232_com">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rs232com.__main__.</span></span><span class="sig-name descname"><span class="pre">rs232_com</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">on_open</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_recv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_error</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_close</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rs232com.__main__.rs232_com" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="rs232com.__main__.rs232_com.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">on_open</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_recv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_error</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_close</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rs232com.__main__.rs232_com.__init__" title="この定義へのパーマリンク">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rs232com.__main__.rs232_com._callback">
+<span class="sig-name descname"><span class="pre">_callback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rs232com.__main__.rs232_com._callback" title="この定義へのパーマリンク">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rs232com.__main__.rs232_com._chk_serial_parameter_">
+<span class="sig-name descname"><span class="pre">_chk_serial_parameter_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rs232com.__main__.rs232_com._chk_serial_parameter_" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>シリアルCOMポートの初期化</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>port</strong> (<em>str</em>) -- COMポート名</p></li>
+<li><p><strong>**kwargs</strong> -- 以下のkeywordパラメータを指定可能
+&quot;baudrate&quot;: ビットレート,
+&quot;bytesize&quot;: バイトサイズ(5,6,7,8),
+&quot;parity&quot;: パリティ(None,Even,Odd),
+&quot;stopbits&quot;: ストップビット指定(1.0/1.5/2.0),
+&quot;xonxoff&quot;: (bool)Xon/Xoff制御,
+&quot;rtscts&quot;: (bool)RTS/CTS制御,
+&quot;dsrdtr&quot;: (bool)DSR/DTR制御,
+&quot;timeout&quot;: (float)受信タイムアウト,</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値</dt>
+<dd class="field-even"><p>[description]</p>
+</dd>
+<dt class="field-odd">戻り値の型</dt>
+<dd class="field-odd"><p>[type]</p>
+</dd>
+<dt class="field-even">例外</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference internal" href="#rs232com._exceptions.RS232comPortException" title="rs232com._exceptions.RS232comPortException"><strong>RS232comPortException</strong></a> -- port指定の違反</p></li>
+<li><p><a class="reference internal" href="#rs232com._exceptions.RS232comArgumentException" title="rs232com._exceptions.RS232comArgumentException"><strong>RS232comArgumentException</strong></a> -- オプション指定引数の違反</p></li>
+<li><p><a class="reference internal" href="#rs232com._exceptions.RS232comParameterException" title="rs232com._exceptions.RS232comParameterException"><strong>RS232comParameterException</strong></a> -- オプション指定パラメータの範囲違反</p></li>
+</ul>
+</dd>
+<dt class="field-odd">戻り値</dt>
+<dd class="field-odd"><p>指定パラメータの辞書</p>
+</dd>
+<dt class="field-even">戻り値の型</dt>
+<dd class="field-even"><p>param(dict)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rs232com.__main__.rs232_com.close">
+<span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rs232com.__main__.rs232_com.close" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>ComポートClose</p>
+<dl class="field-list simple">
+<dt class="field-odd">例外</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#rs232com._exceptions.RS232comCloseException" title="rs232com._exceptions.RS232comCloseException"><strong>RS232comCloseException</strong></a> -- シリアルポートCloseエラー</p>
+</dd>
+<dt class="field-even">戻り値</dt>
+<dd class="field-even"><p>[description]</p>
+</dd>
+<dt class="field-odd">戻り値の型</dt>
+<dd class="field-odd"><p>[bool]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rs232com.__main__.rs232_com.open">
+<span class="sig-name descname"><span class="pre">open</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rs232com.__main__.rs232_com.open" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>シリアルComポートをOpen</p>
+<dl class="field-list simple">
+<dt class="field-odd">例外</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#rs232com._exceptions.RS232comOpneException" title="rs232com._exceptions.RS232comOpneException"><strong>RS232comOpneException</strong></a> -- シリアルポートOpenエラー</p>
+</dd>
+<dt class="field-even">戻り値</dt>
+<dd class="field-even"><p>[description]</p>
+</dd>
+<dt class="field-odd">戻り値の型</dt>
+<dd class="field-odd"><p>[type]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rs232com.__main__.rs232_com.recv">
+<span class="sig-name descname"><span class="pre">recv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">is_rep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rs232com.__main__.rs232_com.recv" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>受信処理</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値</dt>
+<dd class="field-odd"><p>受信したデータ</p>
+</dd>
+<dt class="field-even">戻り値の型</dt>
+<dd class="field-even"><p>[bytes]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rs232com.__main__.rs232_com.send">
+<span class="sig-name descname"><span class="pre">send</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">send_data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rs232com.__main__.rs232_com.send" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>送信処理</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ</dt>
+<dd class="field-odd"><p><strong>send_data</strong> (<em>[</em><em>type</em><em>]</em>) -- [description]</p>
+</dd>
+<dt class="field-even">例外</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference internal" href="#rs232com._exceptions.RS232comValueException" title="rs232com._exceptions.RS232comValueException"><strong>RS232comValueException</strong></a> -- [description]</p></li>
+<li><p><a class="reference internal" href="#rs232com._exceptions.RS232comSendException" title="rs232com._exceptions.RS232comSendException"><strong>RS232comSendException</strong></a> -- [description]</p></li>
+</ul>
+</dd>
+<dt class="field-odd">戻り値</dt>
+<dd class="field-odd"><p>[description]</p>
+</dd>
+<dt class="field-even">戻り値の型</dt>
+<dd class="field-even"><p>[type]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-rs232com._exceptions">
+<span id="rs232com-exceptions-module"></span><h2>rs232com._exceptions module<a class="headerlink" href="#module-rs232com._exceptions" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<section id="filename">
+<h3>FileName:<a class="headerlink" href="#filename" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<blockquote>
+<div><p>_exceptions.py</p>
+</div></blockquote>
+</section>
+<section id="description">
+<h3>Description:<a class="headerlink" href="#description" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<blockquote>
+<div><p>独自例外エラー定義</p>
+</div></blockquote>
+</section>
+<section id="history">
+<h3>History:<a class="headerlink" href="#history" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<blockquote>
+<div><p>2022/02/01 作成</p>
+</div></blockquote>
+<dl class="py exception">
+<dt class="sig sig-object py" id="rs232com._exceptions.RS232comArgumentException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rs232com._exceptions.</span></span><span class="sig-name descname"><span class="pre">RS232comArgumentException</span></span><a class="headerlink" href="#rs232com._exceptions.RS232comArgumentException" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>ベースクラス: <a class="reference internal" href="#rs232com._exceptions.RS232comException" title="rs232com._exceptions.RS232comException"><code class="xref py py-class docutils literal notranslate"><span class="pre">rs232com._exceptions.RS232comException</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="rs232com._exceptions.RS232comCloseException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rs232com._exceptions.</span></span><span class="sig-name descname"><span class="pre">RS232comCloseException</span></span><a class="headerlink" href="#rs232com._exceptions.RS232comCloseException" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>ベースクラス: <a class="reference internal" href="#rs232com._exceptions.RS232comException" title="rs232com._exceptions.RS232comException"><code class="xref py py-class docutils literal notranslate"><span class="pre">rs232com._exceptions.RS232comException</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="rs232com._exceptions.RS232comException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rs232com._exceptions.</span></span><span class="sig-name descname"><span class="pre">RS232comException</span></span><a class="headerlink" href="#rs232com._exceptions.RS232comException" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="rs232com._exceptions.RS232comOpneException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rs232com._exceptions.</span></span><span class="sig-name descname"><span class="pre">RS232comOpneException</span></span><a class="headerlink" href="#rs232com._exceptions.RS232comOpneException" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>ベースクラス: <a class="reference internal" href="#rs232com._exceptions.RS232comException" title="rs232com._exceptions.RS232comException"><code class="xref py py-class docutils literal notranslate"><span class="pre">rs232com._exceptions.RS232comException</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="rs232com._exceptions.RS232comParameterException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rs232com._exceptions.</span></span><span class="sig-name descname"><span class="pre">RS232comParameterException</span></span><a class="headerlink" href="#rs232com._exceptions.RS232comParameterException" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>ベースクラス: <a class="reference internal" href="#rs232com._exceptions.RS232comException" title="rs232com._exceptions.RS232comException"><code class="xref py py-class docutils literal notranslate"><span class="pre">rs232com._exceptions.RS232comException</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="rs232com._exceptions.RS232comPortException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rs232com._exceptions.</span></span><span class="sig-name descname"><span class="pre">RS232comPortException</span></span><a class="headerlink" href="#rs232com._exceptions.RS232comPortException" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>ベースクラス: <a class="reference internal" href="#rs232com._exceptions.RS232comException" title="rs232com._exceptions.RS232comException"><code class="xref py py-class docutils literal notranslate"><span class="pre">rs232com._exceptions.RS232comException</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="rs232com._exceptions.RS232comSendException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rs232com._exceptions.</span></span><span class="sig-name descname"><span class="pre">RS232comSendException</span></span><a class="headerlink" href="#rs232com._exceptions.RS232comSendException" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>ベースクラス: <a class="reference internal" href="#rs232com._exceptions.RS232comException" title="rs232com._exceptions.RS232comException"><code class="xref py py-class docutils literal notranslate"><span class="pre">rs232com._exceptions.RS232comException</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="rs232com._exceptions.RS232comValueException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rs232com._exceptions.</span></span><span class="sig-name descname"><span class="pre">RS232comValueException</span></span><a class="headerlink" href="#rs232com._exceptions.RS232comValueException" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>ベースクラス: <a class="reference internal" href="#rs232com._exceptions.RS232comException" title="rs232com._exceptions.RS232comException"><code class="xref py py-class docutils literal notranslate"><span class="pre">rs232com._exceptions.RS232comException</span></code></a></p>
+</dd></dl>
+
+</section>
+</section>
+<section id="module-rs232com">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-rs232com" title="このヘッドラインへのパーマリンク">¶</a></h2>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">目次</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">rs232com package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-rs232com.__main__">rs232com.__main__ module</a></li>
+<li><a class="reference internal" href="#module-rs232com._exceptions">rs232com._exceptions module</a><ul>
+<li><a class="reference internal" href="#filename">FileName:</a></li>
+<li><a class="reference internal" href="#description">Description:</a></li>
+<li><a class="reference internal" href="#history">History:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-rs232com">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>このページ</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/_root_source_/rs232com.rst.txt"
+            rel="nofollow">ソースコードを表示</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">クイック検索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="検索" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             >索引</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Pythonモジュール索引"
+             >モジュール</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">rs232com ver 0.0 ドキュメント</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">rs232com package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, imagenics.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

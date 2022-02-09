@@ -1,0 +1,13 @@
+ChangeLog
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+rs232com/__init__.py
+rs232com/__main__.py
+rs232com/_exceptions.py
+rs232com.egg-info/PKG-INFO
+rs232com.egg-info/SOURCES.txt
+rs232com.egg-info/dependency_links.txt
+rs232com.egg-info/requires.txt
+rs232com.egg-info/top_level.txt
